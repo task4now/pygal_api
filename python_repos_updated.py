@@ -1,6 +1,6 @@
 import requests
 import pygal
-from pygal.style import LightColorizedStyle as LCS, LightenStyle as LS
+from pygal.style import LightColorizedStyle as Lcs, LightenStyle as Ls
 
 # Make an API call, and store the response.
 url = 'https://api.github.com/search/repositories?q=language:python&sort=stars'
@@ -31,7 +31,7 @@ for repo_dict in repo_dicts:
     plot_dicts.append(plot_dict)
 
 # Make visualization.
-my_style = LS('#333366', base_style=LCS)
+my_style = Ls('#333366', base_style=Lcs)
 my_style.title_font_size = 24
 my_style.label_font_size = 14
 my_style.major_label_font_size = 18

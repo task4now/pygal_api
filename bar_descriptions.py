@@ -1,8 +1,8 @@
 # Adding Custom tooltips (:hover)
 import pygal
-from pygal.style import LightColorizedStyle as LCS, LightenStyle as LS
+from pygal.style import LightColorizedStyle as Lcs, LightenStyle as Ls
 
-my_style = LS('#333366', base_style=LCS)
+my_style = Ls('#333366', base_style=Lcs)
 chart = pygal.Bar(style=my_style, x_label_rotation=45, show_legend=False)
 chart.title = 'Python Projects'
 chart.x_labels = ['httpie', 'django', 'flask']
